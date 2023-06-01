@@ -1,0 +1,30 @@
+body {
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #profileData {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #profileData p {
+    margin-bottom: 10px;
+  }
+  
+  #profileData strong {
+    font-weight: bold;
+  }
+  
+  
+  

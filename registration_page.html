@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="registration_style.css">
+</head>
+
+<body>
+  
+  <header>
+    <h1>Employee Management System</h1>
+    <nav>
+      <a href="login_page.html">Login</a>
+      <a href="registration_page.html">Register</a>
+    </nav>
+  </header>
+  <!-- <h2>Registration Form</h2> -->
+  
+  <form id="registrationForm">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <div>
+        <label>
+          <input type="checkbox" name="gender" value="male"> Male
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="female"> Female
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="other"> Other
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country" required>
+        <option value="">Select</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="USA">USA</option>
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+        <option value="Pakistan">Pakistan</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="about">Write about yourself:</label>
+      <textarea id="about" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox" id="agreeTerms" required> I agree with the company's terms and conditions
+      </label>
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+
+
+  <script src="registration_script.js"></script>
+</body>
+
+</html>

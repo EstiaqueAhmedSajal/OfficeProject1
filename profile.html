@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+
+<body>
+  <h2>User Profile</h2>
+
+  <div id="profileData"></div>
+
+  
+    <button id="editButton">Edit</button>
+    <button id="deleteButton">Delete</button>
+  
+
+  <script src="profile_script.js"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+  <h1>User Profile</h1>
+  <div id="userInfo">
+    <p><strong>First Name:</strong> <span id="firstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+    <p><strong>Username:</strong> <span id="username"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+    <p><strong>Gender:</strong> <span id="gender"></span></p>
+    <p><strong>Country:</strong> <span id="country"></span></p>
+    <p><strong>About:</strong> <span id="about"></span></p>
+    <button id="editButton">Edit</button>
+  </div>
+  <form id="editForm" style="display: none;">
+    <h2>Edit User Data</h2>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female" required> Female
+    <input type="radio" name="gender" value="other" required> Other
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="">Select</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="USA">USA</option>
+      <option value="India">India</option>
+      <option value="Canada">Canada</option>
+      <option value="Pakistan">Pakistan</option>
+    </select>
+    <label for="about">About:</label>
+    <textarea id="about"></textarea>
+    <button type="submit">Update</button>
+  </form>
+  <script src="profile_script.js"></script>
+</body>
+</html>
